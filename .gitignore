@@ -35,3 +35,8 @@ out/
 
 ### VS Code ###
 .vscode/
+
+
+### report files produced by flyway ###
+report.html
+report.json
