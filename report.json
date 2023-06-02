@@ -1,0 +1,405 @@
+{
+  "individualResults": [
+    {
+      "initialSchemaVersion": "1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "warnings": [],
+      "timestamp": "2023-06-01T11:55:36.427687600",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "warnings": [],
+      "timestamp": "2023-06-01T11:57:13.027204300",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "warnings": [],
+      "timestamp": "2023-06-01T11:59:57.399576700",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "warnings": [],
+      "timestamp": "2023-06-01T12:00:36.656054",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create authors",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_0_0__create_authors.sql",
+          "executionTime": 533
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "warnings": [],
+      "timestamp": "2023-06-01T12:09:00.235351",
+      "operation": "migrate",
+      "exception": "Migration V2_1_0__remove_author_details_from_book.sql failed\n------------------------------------------------------------\nSQL State  : 42P01\nError Code : 0\nMessage    : ERROR: relation \"books\" does not exist\nLocation   : db/migrations/V2_1_0__remove_author_details_from_book.sql (C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_author_details_from_book.sql)\nLine       : 1\nStatement  : ALTER TABLE Books\r\nDROP COLUMN author,\r\nDROP COLUMN author_email\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "2.2.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "initial table creation",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V1_0_0__initial_table_creation.sql",
+          "executionTime": 509
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create authors",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_0_0__create_authors.sql",
+          "executionTime": 505
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "remove author details from book",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_author_details_from_book.sql",
+          "executionTime": 492
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "description": "add foreign key for authors to books",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_2_0__add_foreign_key_for_authors_to_books.sql",
+          "executionTime": 577
+        }
+      ],
+      "migrationsExecuted": 4,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "warnings": [],
+      "timestamp": "2023-06-01T12:12:00.871613",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "schemaVersion": "2.2.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "rawVersion": "1.0.0",
+          "description": "initial table creation",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:12:04.945326Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V1_0_0__initial_table_creation.sql",
+          "undoFilepath": "",
+          "installedBy": "aaecaktb",
+          "executionTime": 509
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "rawVersion": "2.0.0",
+          "description": "create authors",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:12:06.511689Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_0_0__create_authors.sql",
+          "undoFilepath": "",
+          "installedBy": "aaecaktb",
+          "executionTime": 505
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "rawVersion": "2.1.0",
+          "description": "remove author details from book",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:12:07.985092Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_author_details_from_book.sql",
+          "undoFilepath": "",
+          "installedBy": "aaecaktb",
+          "executionTime": 492
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "rawVersion": "2.2.0",
+          "description": "add foreign key for authors to books",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:12:09.444442Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_2_0__add_foreign_key_for_authors_to_books.sql",
+          "undoFilepath": "",
+          "installedBy": "aaecaktb",
+          "executionTime": 577
+        }
+      ],
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "allSchemasEmpty": false,
+      "timestamp": "2023-06-01T12:13:20.798837200",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.2.0",
+      "targetSchemaVersion": "3.2.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create publishers",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V3_0_0__create_publishers.sql",
+          "executionTime": 535
+        },
+        {
+          "category": "Versioned",
+          "version": "3.1.0",
+          "description": "remove publisher details from book",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V3_1_0__remove_publisher_details_from_book.sql",
+          "executionTime": 523
+        },
+        {
+          "category": "Versioned",
+          "version": "3.2.0",
+          "description": "add fk for publishers to book",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V3_2_0__add_fk_for_publishers_to_book.sql",
+          "executionTime": 608
+        }
+      ],
+      "migrationsExecuted": 3,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "warnings": [],
+      "timestamp": "2023-06-01T12:34:05.788926800",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "1.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "inital table-creation",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V1_0_0__inital_table-creation.sql",
+          "executionTime": 536
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:13:45.874538100",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create artist",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_0_0__create_artist.sql",
+          "executionTime": 517
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:24:24.343596100",
+      "operation": "migrate",
+      "exception": "Migration V2_1_0__remove_artist_details_from_album.sql failed\n-------------------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"COLUMN\"\n  Position: 6\nLocation   : db/migrations/V2_1_0__remove_artist_details_from_album.sql (C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_artist_details_from_album.sql)\nLine       : 4\nStatement  : DROP COLUMN artist_year_founded\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "remove artist details from album",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_artist_details_from_album.sql",
+          "executionTime": 500
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "description": "add fk for artist to album",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_2_0__add_fk_for_artist_to_album.sql",
+          "executionTime": 580
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create record company",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V3_0_0__create_record_company.sql",
+          "executionTime": 507
+        }
+      ],
+      "migrationsExecuted": 3,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:24:56.747178700",
+      "operation": "migrate",
+      "exception": "Migration V3_1_0__remove_record_company_details_from_album.sql failed\n---------------------------------------------------------------------\nSQL State  : 42P01\nError Code : 0\nMessage    : ERROR: relation \"books\" does not exist\nLocation   : db/migrations/V3_1_0__remove_record_company_details_from_album.sql (C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V3_1_0__remove_record_company_details_from_album.sql)\nLine       : 1\nStatement  : ALTER TABLE Books\r\nDROP COLUMN publisher,\r\nDROP COLUMN publisher_location\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "3.2.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "inital table-creation",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V1_0_0__inital_table-creation.sql",
+          "executionTime": 536
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create artist",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_0_0__create_artist.sql",
+          "executionTime": 531
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "remove artist details from album",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_artist_details_from_album.sql",
+          "executionTime": 524
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "description": "add fk for artist to album",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V2_2_0__add_fk_for_artist_to_album.sql",
+          "executionTime": 613
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create record company",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V3_0_0__create_record_company.sql",
+          "executionTime": 535
+        },
+        {
+          "category": "Versioned",
+          "version": "3.1.0",
+          "description": "remove record company details from album",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V3_1_0__remove_record_company_details_from_album.sql",
+          "executionTime": 523
+        },
+        {
+          "category": "Versioned",
+          "version": "3.2.0",
+          "description": "add fk for record company to album",
+          "type": "SQL",
+          "filepath": "C:\\Users\\vouto\\IdeaProjects\\java-api-migrations-workshop\\db\\migrations\\V3_2_0__add_fk_for_record_company_to_album.sql",
+          "executionTime": 614
+        }
+      ],
+      "migrationsExecuted": 7,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "aaecaktb",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:28:07.211856800",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
