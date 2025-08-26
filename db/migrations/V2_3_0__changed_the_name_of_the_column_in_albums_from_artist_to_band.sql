@@ -1,0 +1,3 @@
+ALTER TABLE albums
+DROP COLUMN artist_name,
+ADD COLUMN band_name TEXT NOT NULL;

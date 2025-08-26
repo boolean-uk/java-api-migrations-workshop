@@ -1,0 +1,5 @@
+ALTER TABLE albums
+ADD COLUMN band_id INTEGER,
+ADD CONSTRAINT fk_band_id
+FOREIGN KEY (band_id)
+REFERENCES bands(id);
